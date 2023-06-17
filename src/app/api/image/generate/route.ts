@@ -6,3 +6,9 @@ export async function POST(request: NextRequest) {
 
   return NextResponse.json({});
 }
+
+export async function GET(request: NextRequest) {
+  await GenerateForAll();
+
+  return NextResponse.json({});
+}
